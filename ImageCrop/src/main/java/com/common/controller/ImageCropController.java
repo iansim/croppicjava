@@ -73,7 +73,6 @@ public class ImageCropController {
             int rotated_height = bfImg.getHeight();
             log.debug("imgInitW:"+imgInitW+" rotated_width:"+rotated_width);
             log.debug("imgInitH:"+imgInitH+" rotated_height:"+rotated_height);
-            Thumbnails.of(bfImg).scale(1.0).toFile(tmpFolder + "1.jpg");;
             //Get the size difference between rotate image and init image
             final float dx = rotated_width - imgInitW;
             final float dy = rotated_height - imgInitH;
